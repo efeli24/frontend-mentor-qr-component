@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* Mobile: 375px, Desktop: 1440px */
+
+/* CSS Document */
+:root {
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+	background-color: var(--light-gray);
+	font-family: Outfit, sans-serif;
+}
+
+p {
+	font-size: 15px;
+}
+
+.qr-section {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	max-width: 300px;
+	border-radius: 20px;
+	padding: 15px;
+	background-color: var(--white);
+	box-shadow: 0 10px 60px 10px var(--grayish-blue);
+}
+
+.qr-section img {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: -15px;
+}
+
+.cta {
+	text-align: center;
+	color: var(--dark-blue);
+	font-weight: 700;
+	font-size: 1.4rem;
+	padding: 1rem;
+	margin-bottom: -30px;
+}
+
+.description {
+	text-align: center;
+	color: var(--grayish-blue);
+	font-weight: 400;
+	padding: 1.1rem;
+}
+
+.attribution {
+	position: fixed;
+	bottom: 2%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: var(--grayish-blue);
+}
